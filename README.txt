@@ -1,52 +1,45 @@
-
-TITLE: 
-Module - 100% Fully Responsive Free HTML5 Bootstrap Template
-
-AUTHOR:
-DESIGNED & DEVELOPED by FREEHTML5.co
-
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
+Spectral by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-CREDITS:
+A big, modern, blocky affair with a mobile-style menu, fully responsive styling,
+and an assortment of pre-styled elements. So, pretty much what you were expecting
+-- except, of course, for how it's put together, specifically:
 
-Bootstrap
-http://getbootstrap.com/
+- It's built with components from my Responsive Tools project.
 
-jQuery
-http://jquery.com/
+- It uses flexbox, which eliminates all kinds of terrible hacks and clunky layout
+  stopgaps (like CSS grid systems).
 
-jQuery Easing
-http://gsgd.co.uk/sandbox/jquery/easing/
+- It uses Sass* a lot more intelligently, thanks in part to several new mixins
+  and functions I've been working on (as well as a few by @HugoGiraudel).
 
-Modernizr
-http://modernizr.com/
+  (* = still entirely optional if you prefer vanilla CSS :)
 
-Google Fonts
-https://www.google.com/fonts/
+- A ton of other stuff.
 
-Icomoon
-https://icomoon.io/app/
+In short, Spectral's the culmination of several new things I'm working on/trying out,
+so please, let me know what you think :)
 
-Respond JS
-https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
 
-animate.css
-http://daneden.me/animate
+(* = not included)
 
-jQuery Waypoint
-https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
+AJ
+aj@lkn.io | @ajlkn
 
-Superfish Menu
-http://users.tpg.com.au/j_birch/plugins/superfish/examples/
 
-hoverIntent
-https://github.com/briancherne/jquery-hoverIntent
+Credits:
 
-Stellar Parallax
-http://markdalgleish.com/projects/stellar.js/
+	Demo Images:
+		Unsplash (unsplash.com)
 
-Magnific Popup
-http://dimsemenov.com/plugins/magnific-popup/
+	Icons:
+		Font Awesome (fontawesome.io)
+
+	Other:
+		jQuery (jquery.com)
+		Scrollex (github.com/ajlkn/jquery.scrollex)
+		Responsive Tools (github.com/ajlkn/responsive-tools)
