@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 	    <meta name="author" content="Armin Scherz">
-	    <meta name="description" content="SpiralUp! ermöglicht den Aufbau exzellenter digitaler Services mit dem Ziel Kunden nachhaltig zu begeistern. Dazu bietet SpiralUp! hochwertige Dienstleistungen an: Innovationsideen, Technologieauswahl, Nutzereinbindung und Projektleitung.">
+	    <meta name="description" content="SpiralUp! ermöglicht den Aufbau exzellenter digitaler Services mit dem Ziel Nutzer nachhaltig zu begeistern. Dazu bietet SpiralUp! hochwertige Dienstleistungen an: Innovationsideen, Technologieauswahl, Nutzereinbindung und Projektleitung.">
 	    <meta name="keywords" content="Wien, Digital, Online, Innovationsideen, Technologieauswahl, Nutzereinbindung, Projektleitung">
 	    <meta http-equiv="content-language" content="de-at" />
 
@@ -88,7 +88,7 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<h1>
-							<a href="index.html">
+							<a href="index.html#banner">
 								<img src="images/Spiralup_logo_weiss.svg">
 								SpiralUp!
 							</a>
@@ -513,7 +513,26 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets/js/msgbox.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script type="text/javascript">
+				let msgboxboxPersistent = new MessageBox("#page-wrapper", {
+				  closeTime: 10000,
+				  hideCloseButton: true
+				});
+
+
+				// Show the message at the beginning
+				msgboxboxPersistent.show(
+				  "Guten Tag! Diese Seite nutzt keine Cookies. Sie können sich entspannt und unbeobachtet umsehen.",
+				  "Schließen",
+				  () => {
+				    /*console.log(
+				      "I am the callback! Of course, you may add various javascript codes to make the callback function colourful."
+				    );*/
+				  }
+				);
+			</script>
 	</body>
 </html>
