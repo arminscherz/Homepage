@@ -518,15 +518,15 @@
 
 			<script type="text/javascript">
 				let msgboxboxPersistent = new MessageBox("#page-wrapper", {
-				  closeTime: 10000,
-				  hideCloseButton: true
+				  closeTime: 20000,
+				  hideCloseButton: false
 				});
 
 
 				// Show the message at the beginning
 				msgboxboxPersistent.show(
 				  "Guten Tag! Diese Seite nutzt keine Cookies. Sie können sich entspannt und unbeobachtet umsehen.",
-				  "Schließen",
+				  "x",
 				  () => {
 				    /*console.log(
 				      "I am the callback! Of course, you may add various javascript codes to make the callback function colourful."
