@@ -1,0 +1,74 @@
+Spiralup.at DNS entries
+Hostname		
+(Nummer?)
+Registrierungstyp
+(Nummer?)
+Adresse	 
+
+autodiscover
+86400
+CNAME (Alias)
+autodiscover.outlook.com.
+
+lyncdiscover
+86400
+CNAME (Alias)
+webdir.online.lync.com.
+
+sip
+86400
+CNAME (Alias)
+sipdir.online.lync.com.
+
+(Hostname leer)
+86400
+SPF (txt)
+google-site-verification=4pAeIppodtEnpd6irHQcdQKiE0zUxeZhh3Lhu2XO24I
+
+(Hostname leer)
+86400
+A (Address)
+151.101.1.195
+
+(Hostname leer)
+86400
+A (Address)
+151.101.65.195
+
+(Hostname leer)
+86400
+SPF (txt)
+MS=ms96887060
+
+(Hostname leer)
+86400
+MX (Mail)
+0
+spiralup-at.mail.protection.outlook.com.
+
+(Hostname leer)
+86400
+SPF (txt)
+v=spf1 include:spf.protection.outlook.com -all
+
+www
+86400
+A (Address)
+151.101.1.195
+
+www
+86400
+A (Address)
+151.101.65.195
+
+_sip._tls
+86400
+SRV
+1
+100 443 sipdir.online.lync.com.
+
+_sipfederationtls._tcp
+86400
+SRV
+1
+100 5061 sipfed.online.lync.com.
