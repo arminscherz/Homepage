@@ -1,0 +1,95 @@
+openapi: 3.0.0
+info:
+  title: Lomnido Wienenergie API
+  description: This is a simple API for all systems
+  contact:
+    email: support@lomnido.com
+  version: 1.0.2
+servers:
+  - url: 'https://wienenergie.lomnido.com/lomnido/webservice/test/'
+    description: LomnidoIn Test environment
+  - url: 'https://wienenergie.lomnido.com/lomnido/webservice/production/'
+    description: LomnidoIn production
+tags:
+  - name: admins
+    description: Secured Admin-only calls
+  - name: developers
+    description: Operations available to regular developers
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+paths:
+  /WEJIRAIn:
+    post:
+      tags:
+        - admins
+      summary: Post a https message to Lomnido from the system Wien Energie Jira
+      description: Post a https message to Lomnido from the system Wien Energie Jira
+      operationId: WEJIRAIn
+      requestBody:
+        description: any json
+        content:
+          application/json: {}
+      responses:
+        '200':
+          description: item created
+        '400':
+          description: 'invalid input, object invalid'
+        '500':
+          description: something went wrong
+  /TOIS_In:
+    post:
+      tags:
+        - admins
+      summary: Post a https message to Lomnido from the System TOIS
+      description: Post a https message to Lomnido from the System TOIS
+      operationId: TOIS_In
+      requestBody:
+        description: any json
+        content:
+          application/json: {}
+      responses:
+        '200':
+          description: item created
+        '400':
+          description: 'invalid input, object invalid'
+        '500':
+          description: something went wrong
+  /WITJIRAIn:
+    post:
+      tags:
+        - admins
+      summary: Post a https message to Lomnido from the System Wien IT jira
+      description: Post a https message to Lomnido from the System Wien IT Jira
+      operationId: WITJIRAIn
+      requestBody:
+        description: any json
+        content:
+          application/json: {}
+      responses:
+        '200':
+          description: item created
+        '400':
+          description: 'invalid input, object invalid'
+        '500':
+          description: something went wrong
+  /WITRemedyIn:
+    post:
+      tags:
+        - admins
+      summary: Post a https message to Lomnido from the System Wien IT Remedy
+      description: Post a https message to Lomnido from the System Wien IT Remedy
+      operationId: WITRemedyIn
+      requestBody:
+        description: any json
+        content:
+          application/json: {}
+      responses:
+        '200':
+          description: item created
+        '400':
+          description: 'invalid input, object invalid'
+        '500':
+          description: something went wrong
