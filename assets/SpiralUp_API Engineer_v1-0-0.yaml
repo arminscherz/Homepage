@@ -1,0 +1,233 @@
+openapi: 3.0.0
+
+info:
+  title: SpiralUp! API Engineer
+  description: This is a job offering for the "API Engineer" role at SpiralUp!
+  contact:
+    name: SpiralUp! Jobs
+    url: https://spiralup.at
+    email: jobs@spiralup.at
+  version: 1.0.0
+
+
+servers:
+  - url: https://spiralup.at
+    description: "SpiralUp! helps it's clients to create excellent digital services. The goals are to reach competitive advantages on digital channels, save time and energy for clients and users and ultimately exceed the users service-expectations. This leads to organic sustainable growth for SpiralUp's clients."  
+    
+
+paths:
+  /offering/API_Engineer:
+    post:
+      summary: Job description for the "API Engineer" role at SpiralUp!
+      description: As an API engineer you work in agile teams to realize excellent digital services. Your role is to create the required APIs, which make functionality from other IT systems savely accessible. In order to do so you need to understand API requirements, design solutions based on your technical knowledge and finally develop an test the APIs together with your colleages.
+      parameters:
+      - name: yourPartOfTheDeal
+        description: What the role requests from you
+        in: query
+        required: true
+        schema:
+          type: object
+          properties:
+            ambition:
+              type: object
+              description: What you want to do and makes you happy.
+              properties:
+                userCentricity:
+                  type: string
+                  description: You enjoy a user centric development approach and rigid customer orientation
+                  example: 
+                    - "build prototypes"
+                    - "prepare realisitc user tests"
+                    - "Utilize A/B tests"
+                    - "enjoy direct user feedback"
+                qualityAwareness:
+                  type: string
+                  description: You strive for excellence and highest quality results and have understood that only continuous, hard work can lead there.
+                  example: 
+                    - "0 error goal"
+                    - "test driven"
+                    - "test automation"
+                    - "continuous improvement" 
+                resultOrientation:
+                  type: string
+                  description: You are driven by what technology can do 
+                  example: 
+                    - "know the business impact of your solution"
+                    - "entrepreneural thinking"
+                    - "apply the pareto principle"
+                    - "value outcome over technical perfection" 
+                teamPlay:
+                  type: string
+                  description: You enjoy working in teams and contribute to the team's success
+                  example: 
+                    - "support others"
+                    - "social skills"
+                    - "keep promises"
+                    - "openly argument your opinions"
+                    - "accept team decisions" 
+                curiosity:
+                  type: string
+                  description: You are naturally curios and want to understand how things work
+                  example: 
+                    - "Interested in the client's business"
+                    - "Know which value is created for the end users"
+                    - "Test hypotheses"
+                    - "Recognize opportunies for learning"
+                learning:
+                  type: string
+                  description: You have a steep learning curve and love to continuously improve your skills.
+                  example: 
+                    - "Make use of opportunies for learning"
+                    - "Iterative development methods"
+                    - "Keep up to date with trends and innovations"
+                    - "Network with peers for knowledge exchange" 
+
+            expertise:
+              description: What you already know and can do.
+              type: object
+              properties:
+                apiDesign:
+                  type: string
+                  description: API Design and Modelling 
+                  example: 
+                    - "OpenAPI"
+                    - "Swagger"
+                    - "REST"
+                    - "GraphQL"
+                    - "REST"
+                    - "API lifecycle managment" 
+                programming:
+                  type: string
+                  description: Backend Programming skills and software delopment knowhow
+                  example: 
+                    - "Java"
+                    - "Python"
+                    - "Node.js" 
+                    - "RDBMS"
+                    - "Staged deployement environements"
+                    - "IDEs"
+                tooling:
+                  type: string
+                  description: modern tooling for agile software development
+                  example: 
+                    - "JIRA"
+                    - "GIT"
+                    - "build automation"
+                    - "jenkins"
+                architecture:
+                  type: string
+                  description: Architecture & Cloud Know How
+                  example: 
+                    - "Enterprise integration patterns"
+                    - "Messaging"
+                    - "Event streaming"
+                    - "Transactions"
+                    - "Containerization"
+                    - "AWS"
+                    - "Google Cloud Platform"
+                integration:
+                  type: string
+                  description: Enterprise Integration and service orchestration
+                  example: 
+                    - "BPMN"
+                    - "jBPM"
+                    - "Camunda"
+                    - "Spring Integration"
+                    - "SAP integration"
+                    - "Salesforce integration"
+                security:
+                  type: string
+                  description: Securing APIs and connections
+                  example: 
+                    - "OATH2"
+                    - "JWT"
+                    - "Client certificates"
+                    - "API keys"
+                    - "TLS"
+                    - "encryption"
+
+            experience:
+              description: What you have already worked on and achieved results
+              type: object
+              properties:
+                languages:
+                  type: string
+                  description: Fluent German and English are required
+                  example: 
+                    - "Fluent German"
+                    - "Fluent English"
+                education:
+                  type: string
+                  description: finished relevant education
+                  example: 
+                    - "bac in computer science"
+                    - "bac FH"
+                    - "HTL"
+                examples:
+                  type: string
+                  description: Life & running digital services, you have contributed to in a relefant role.
+                  example: 
+                    - "API api.axample.com"
+                    - "Website example.com"
+                references:
+                  type: string
+                  description: At least 3 people who have worked together with you and can be contacted for reference.  
+                  example: 
+                    - "Project manager"
+                    - "Client"
+                    - "Team colleage"                 
+      responses:
+        '200':
+          description: What you can expect in response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  purpose:
+                    type: string
+                    description: We actively shape digital transformation projects, that make a diffence.
+                    example: 
+                      - "personal impact"
+                      - "see and feel tanginle results"
+                      - "improve online services for millions of users"
+                  culture:
+                    type: string
+                    description: We treat each other with respect and care about individual needs
+                    example: 
+                      - "mutual respect"
+                      - "diversity as a chance"
+                      - "involvement into management decisions"
+                      - "flat hierarchies"
+                      - "Feedback is encouraged and valued"
+                  projects:
+                    type: string
+                    description: Our projects range from concept development to implementation of new digital services and products for a range of industries
+                    example: 
+                      - "Prepare a prototype and API mock for user test"
+                      - "Agile Team of 5-9 people to create a new customer portal."
+                      - "Evaluate and recommend an online architecture"
+                  career:
+                    type: string
+                    description: We continuously impprove our skills and know how. You will benefit from an individually setup training & development program
+                    example: 
+                      - "Onboarding"
+                      - "Personal Development Plan"
+                      - "min 10 days traning per year"
+                  workLifebalance:
+                    type: string
+                    description: We choose how you organize our work individually.
+                    example: 
+                      - "Home office"
+                      - "Remote working"
+                      - "flexible working hours"
+                      - "personal tooling"
+                  salary:
+                    type: number
+                    description: We share fair and performance based salary depending.
+                    example: 
+                      - "60.000 EUR p.a. base salary"
+                      - "Additional performance based bonus"       
+                      - "Salaries based on individual professional experience and skills"           
+        '403':
+          description: No work allowance in Austria
