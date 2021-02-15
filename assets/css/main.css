@@ -4046,7 +4046,7 @@ input, select, textarea {
 	.msgbox-box {
 		font-size: inherit;
 		color: #4E4852;
-		background-color: rgba(255, 255, 255, 0.85);
+		background-color: rgba(255, 255, 255, 0.75);
 		text-align: center;
 		display: block;
 		position: fixed;
@@ -4065,8 +4065,7 @@ input, select, textarea {
 	}
 	.msgbox-content {
 		flex-shrink: 1;
-		margin-left: 1em;
-		margin-right: 1em;
+		margin: 1em;
 	}
 	.msgbox-close {
 		color: #4E4852;
