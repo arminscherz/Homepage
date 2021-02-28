@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>SpiralUp! Datensutzerklärung</title>
+		<title>SpiralUp! Datenschutzerklärung</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
@@ -206,6 +206,27 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/msgbox.js"></script>
 
+			<script type="text/javascript">
+				window.onload = function() {
+					let msgboxboxPersistent = new MessageBox("#page-wrapper", {
+					  closeTime: 10000,
+					  hideCloseButton: false
+					});
+
+
+					// Show the message at the beginning
+					msgboxboxPersistent.show(
+					  "Guten Tag! Diese Seite nutzt keine Cookies. Sie können sich entspannt und unbeobachtet umsehen.",
+					  "x",
+					  () => {
+					    /*console.log(
+					      "I am the callback! Of course, you may add various javascript codes to make the callback function colourful."
+					    );*/
+					  }
+					);
+				}
+			</script>
 	</body>
 </html>
