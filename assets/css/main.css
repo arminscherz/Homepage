@@ -4045,8 +4045,8 @@ input, select, textarea {
 /*****************************/
 	.msgbox-box {
 		font-size: inherit;
-		color: #333333;
-		background-color: rgba(20, 160, 192, 0.75);
+		color: #eeeeee;
+		background-color: rgba(46, 56, 66, 0.75);
 		text-align: center;
 		display: block;
 		position: fixed;
@@ -4054,7 +4054,7 @@ input, select, textarea {
 		left: 10%;
 		bottom: 10%;
 		border-radius: 8px;
-		box-shadow: 0 0px 0px rgba(20, 160, 192, 0.75);
+		box-shadow: 0 0px 0px rgba(46, 56, 66, 0.75);
 		transition: opacity 300ms ease-in; 
 	}
 	.msgbox-box.msgbox-box-hide {
@@ -4068,7 +4068,7 @@ input, select, textarea {
 		margin: 1em;
 	}
 	.msgbox-close {
-		color: #333333;
+		color: #eeeeee;
 		font-weight: bold;
 		text-decoration: none;
 		position: absolute;
@@ -4081,7 +4081,7 @@ input, select, textarea {
 		transition: text-shadow 225ms ease-out;
 	}
 	.msgbox-close:hover {
-		color: #333333;
+		color: #eeeeee;
 	}
 
 
